@@ -9,7 +9,8 @@ put all these command in terminal
 if you would like to use redis-cli
 docker exec -it redis-cache redis-cli
 
-
+the app is up here:
+http://localhost:8080/swagger-ui.html
 
 
             good luck
