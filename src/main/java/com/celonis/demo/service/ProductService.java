@@ -28,6 +28,7 @@ public class ProductService {
 
     @Cacheable(value = "PRODUCT", key = "'PRONUM:' + #city")
     public Product getProductById(String city) {
+        waitSomeTime();
         log.info("Looking into DB for product {}", city);
         return productRepository.findById(city).orElse(null);
     }
@@ -46,6 +47,7 @@ public class ProductService {
 
     //backup method for removed data
     public void savedRemovedFromCache(Product product) {
+        waitSomeTime();
         BackUp backUp = new BackUp();
         backUp.setCityBackUp(product.getCity());
         backUp.setCountryBackUp(product.getCountry());
