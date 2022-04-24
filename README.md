@@ -1,5 +1,4 @@
-# cache-with-spring-redis-docker-compose
-# cache-with-spring-redis-docker-compose
+
 how to launch the project:
 
 put all these command in terminal
